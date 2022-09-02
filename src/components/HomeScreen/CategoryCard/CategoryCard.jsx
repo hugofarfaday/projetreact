@@ -1,18 +1,16 @@
 import React, { Component } from 'react'
-import Card from 'react-bootstrap/Card';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default class CategoryCard extends React.Component {
-  render() {
+function CategoryCard(props) {
     return (
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={this.props.img} alt={this.props.user}/>
-      <Card.Body>
-        <Card.Title>{this.props.title}</Card.Title>
-        <Card.Text>
-            {this.props.text}
-        </Card.Text>
-      </Card.Body>
-    </Card>
-    )
+    <div className="card col-6" style={{width: '18rem'}}>
+      <img src={props.img} class="card-img-top" alt={props.user}/>
+      <div className="card-body">
+      <h5 className="card-title">{props.title}</h5>
+        <p className="card-text">{props.text}</p>
+      </div>
+    </div>
+    );
   }
-}
+
+export default CategoryCard;
