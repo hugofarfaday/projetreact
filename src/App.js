@@ -2,14 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import HomeScreen from './components/HomeScreen/HomeScreen';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CategoryCard from './components/HomeScreen/CategoryCard/CategoryCard';
-import { Container } from 'react-bootstrap';
+import ContactForm from './components/ContactForm/ContactForm';
+
 
 function App(props) {
   return (
     <>
     <div className='container'>
     <HomeScreen></HomeScreen>
+    <ContactForm></ContactForm>
     </div>
     </>
   );
