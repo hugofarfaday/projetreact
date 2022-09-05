@@ -1,7 +1,18 @@
 import React, { Component } from 'react';
 
 class ContactForm extends Component {
+
     render() {
+        
+        const handleFormSubmit = (evt) => {
+            evt.preventDefault();
+            const form = evt.target;
+            const formData = new FormData(form);
+            const jsonData = Object.fromEntries(formData.entries());
+            // const jsonData2 = Object.fromEntries(new FormData(evt.target));
+            console.log(jsonData);
+          };
+
         return (
     <form>
   <div class="mb-3">
