@@ -6,6 +6,16 @@ import ContactForm from './components/ContactForm/ContactForm';
 
 
 function App(props) {
+
+  const handleFormSubmit = (evt) => {
+    evt.preventDefault();
+    const form = evt.target;
+    const formData = new FormData(form);
+    const jsonData = Object.fromEntries(formData.entries());
+    // const jsonData2 = Object.fromEntries(new FormData(evt.target));
+    console.log(jsonData);
+  };
+  
   return (
     <>
     <div className='container'>
