@@ -15,7 +15,16 @@ function App(props) {
     // const jsonData2 = Object.fromEntries(new FormData(evt.target));
     console.log(jsonData);
   };
+
+  switch (isdark) {
+    case value:
+      
+      break;
   
+    default:
+      break;
+  }
+
   return (
     <>
     <div className='container'>
