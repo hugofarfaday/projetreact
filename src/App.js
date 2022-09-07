@@ -16,15 +16,6 @@ function App(props) {
     console.log(jsonData);
   };
 
-  switch (isdark) {
-    case value:
-      
-      break;
-  
-    default:
-      break;
-  }
-
   return (
     <>
     <div className='container'>
